@@ -1,6 +1,6 @@
-# LungCare Mobile Application
+# LungCare 
 
-## Smart Management System for Obstructive Lung Disease
+## A Smart Management System for Obstructive Lung Disease
 
 LungCare is a mobile healthcare application designed to support patients with obstructive lung diseases by connecting a smart respiratory device, patients, and doctors in one integrated digital system.
 
