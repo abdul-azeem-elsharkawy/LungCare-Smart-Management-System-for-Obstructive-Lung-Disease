@@ -326,7 +326,7 @@ When the doctor updates the plan, the patient receives a notification inside the
 
 ### Patient Dashboard
 
-![Patient Dashboard](assets/screenshots/02-patient-dashboard.png)
+![Patient Dashboard](assets/screenshots/02-patient-dashboard.bmp)
 
 ---
 
@@ -338,7 +338,7 @@ When the doctor updates the plan, the patient receives a notification inside the
 
 ### Smart Inhaler Card
 
-![Smart Inhaler](assets/screenshots/04-smart-inhaler.png)
+![Smart Inhaler](assets/screenshots/04-smart-inhaler.bmp)
 
 ---
 
@@ -350,7 +350,7 @@ When the doctor updates the plan, the patient receives a notification inside the
 
 ### Gamified Spirometry Test
 
-![Spirometry Test](assets/screenshots/06-spirometry-test.png)
+![Spirometry Test](assets/screenshots/06-spirometry-test.bmp)
 
 ---
 
@@ -374,7 +374,7 @@ When the doctor updates the plan, the patient receives a notification inside the
 
 ### Treatment Plan Update
 
-![Treatment Plan](assets/screenshots/10-treatment-plan.png)
+![Treatment Plan](assets/screenshots/10-treatment-plan.bmp)
 
 ---
 
