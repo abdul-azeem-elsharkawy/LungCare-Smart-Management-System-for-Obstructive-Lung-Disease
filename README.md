@@ -28,6 +28,125 @@ The system aims to improve treatment adherence, support remote monitoring, and p
 
 ---
 
+## LungCare Smart Device
+
+LungCare is not only a mobile application. It is designed as a complete connected respiratory-care system that combines a smart physical device with a mobile application and cloud-based medical follow-up.
+
+The LungCare device integrates two main modules:
+
+- Smart Inhaler Module
+- Smart Spirometer Module
+
+Together, these modules support medication delivery, lung-function testing, digital tracking, and doctor review through one connected platform.
+
+![LungCare Smart Device](assets/screenshots/device/01-lungcare-device.png)
+
+---
+
+## Device Concept
+
+The LungCare smart device was designed to transform respiratory care from manual and disconnected workflows into a smart, guided, and connected experience.
+
+The device supports:
+
+- Automated medication actuation
+- Guided spirometry testing
+- Digital medication tracking
+- Lung-function result visualization
+- Patient data sharing with doctors
+
+This allows the patient to use one integrated system for treatment, testing, and medical follow-up.
+
+---
+
+## Product Architecture
+
+The system architecture connects embedded hardware, Bluetooth Low Energy communication, the Flutter mobile application, Firebase services, and clinical follow-up tools.
+
+The hardware layer includes the smart inhaler and smart spirometer device. The mobile app acts as the user interface, while Firebase stores patient data, medication logs, spirometry reports, and treatment updates.
+
+![Product Architecture](assets/screenshots/device/02-product-architecture.png)
+
+The main architecture layers include:
+
+- Embedded hardware
+- Bluetooth Low Energy communication
+- Flutter mobile application
+- Firebase cloud services
+- Clinical management layer
+
+---
+
+## Product Design Concept
+
+The LungCare device housing was custom-engineered to integrate the mechanical and electronic components required for portable respiratory care.
+
+The design supports:
+
+- pMDI canister placement
+- Mouthpiece interface
+- Spirometry airflow path
+- Internal electronics placement
+- Battery placement
+- Servo motor alignment
+- Overall mechanical integration
+
+![Product Design Concept](assets/screenshots/device/03-product-design-concept.png)
+
+---
+
+## 3D-Printed Housing
+
+The physical prototype was built using a custom 3D-printed housing.
+
+The housing was designed to support:
+
+- Portable device form
+- Stable inhaler positioning
+- Integrated airflow path
+- Internal electronics housing
+- Mechanical actuation alignment
+
+![3D-Printed Housing](assets/screenshots/device/04-3d-printed-housing.png)
+
+---
+
+## Smart Spirometer Module
+
+The LungCare Smart Spirometer brings lung-function assessment closer to the patient’s home.
+
+The spirometer module supports:
+
+- Home-based assessment
+- Guided test workflow
+- Flow and volume calculation
+- Spirometry report generation
+- Doctor review through the mobile application
+
+![Smart Spirometer Module](assets/screenshots/device/05-spirometer-module.png)
+
+The spirometer relies on pressure-based airflow sensing to estimate airflow and calculate respiratory values such as FVC, FEV1, FEV1/FVC ratio, PEF, and FET.
+
+---
+
+## Smart Inhaler Module
+
+The Smart Inhaler module replaces manual inhaler pressing with a controlled and sensor-validated medication delivery mechanism.
+
+The module supports:
+
+- Safety validation before actuation
+- Correct orientation checking
+- Inhalation-based triggering
+- Servo-based canister pressing
+- Confirmed dose logging to the mobile application
+
+![Smart Inhaler Module](assets/screenshots/device/06-smart-inhaler-module.png)
+
+The goal of this module is to improve dose delivery reliability, reduce incorrect inhaler technique, and provide a clear digital medication history for both patients and doctors.
+
+---
+
 ## Main Application Users
 
 ### Patient
