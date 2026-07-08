@@ -2,9 +2,8 @@
 
 ## A Smart Management System for Obstructive Lung Disease
 
-LungCare is a mobile healthcare application designed to support patients with obstructive lung diseases by connecting a smart respiratory device, patients, and doctors in one integrated digital system.
+LungCare is a smart connected respiratory-care system designed to support patients with obstructive lung diseases. The system combines a custom smart device, a Flutter mobile application, Bluetooth Low Energy communication, and Firebase cloud services to provide medication support, guided spirometry testing, medical reporting, and remote doctor follow-up.
 
-The application provides smart inhaler control, guided spirometry testing, medical report generation, treatment plan updates, device management, and patient-doctor follow-up.
 
 > This repository is a public showcase version of the project.  
 > The source code is kept private for security reasons because the system integrates with Firebase services, Bluetooth Low Energy communication, and medical-device-related workflows.
@@ -39,7 +38,7 @@ The LungCare device integrates two main modules:
 
 Together, these modules support medication delivery, lung-function testing, digital tracking, and doctor review through one connected platform.
 
-![LungCare Smart Device](assets/screenshots/device/01-lungcare-device.png)
+![LungCare Smart Device](assets/device/01-lungcare-device.png)
 
 ---
 
@@ -65,7 +64,7 @@ The system architecture connects embedded hardware, Bluetooth Low Energy communi
 
 The hardware layer includes the smart inhaler and smart spirometer device. The mobile app acts as the user interface, while Firebase stores patient data, medication logs, spirometry reports, and treatment updates.
 
-![Product Architecture](assets/screenshots/device/02-product-architecture.png)
+![Product Architecture](assets/device/02-product-architecture.png)
 
 The main architecture layers include:
 
@@ -91,7 +90,7 @@ The design supports:
 - Servo motor alignment
 - Overall mechanical integration
 
-![Product Design Concept](assets/screenshots/device/03-product-design-concept.png)
+![Product Design Concept](assets/device/03-product-design-concept.png)
 
 ---
 
@@ -107,7 +106,7 @@ The housing was designed to support:
 - Internal electronics housing
 - Mechanical actuation alignment
 
-![3D-Printed Housing](assets/screenshots/device/04-3d-printed-housing.png)
+![3D-Printed Housing](assets/device/04-3d-printed-housing.png)
 
 ---
 
@@ -123,7 +122,7 @@ The spirometer module supports:
 - Spirometry report generation
 - Doctor review through the mobile application
 
-![Smart Spirometer Module](assets/screenshots/device/05-spirometer-module.png)
+![Smart Spirometer Module](assets/device/05-spirometer-module.png)
 
 The spirometer relies on pressure-based airflow sensing to estimate airflow and calculate respiratory values such as FVC, FEV1, FEV1/FVC ratio, PEF, and FET.
 
@@ -141,7 +140,7 @@ The module supports:
 - Servo-based canister pressing
 - Confirmed dose logging to the mobile application
 
-![Smart Inhaler Module](assets/screenshots/device/06-smart-inhaler-module.png)
+![Smart Inhaler Module](assets/device/06-smart-inhaler-module.png)
 
 The goal of this module is to improve dose delivery reliability, reduce incorrect inhaler technique, and provide a clear digital medication history for both patients and doctors.
 
@@ -286,15 +285,34 @@ When the doctor updates the plan, the patient receives a notification inside the
 
 ## Technology Stack
 
+### Mobile Application
+
 - Flutter
 - Dart
 - Firebase Authentication
 - Cloud Firestore
 - Firebase Realtime Database
-- Firebase Local Notifications
+- Local Notifications
 - Bluetooth Low Energy
-- ESP32
-- Mobile-based spirometry visualization
+- Data visualization and spirometry reporting
+
+### Embedded System
+
+- ESP32 microcontroller
+- Bluetooth Low Energy communication
+- Pressure-based airflow sensing
+- MPU6050 orientation sensing
+- Servo motor actuation
+- Status indicators
+- Battery-powered portable design
+
+### Mechanical Design
+
+- Custom 3D-printed housing
+- pMDI canister holder
+- Mouthpiece interface
+- Integrated airflow path
+- Internal electronics compartment
 
 ---
 
@@ -362,16 +380,19 @@ When the doctor updates the plan, the patient receives a notification inside the
 
 ## Security Note
 
-This public repository does not include the application source code, Firebase configuration files, ESP32 firmware, API keys, or any private database structure.
+This public repository does not include the application source code, Firebase configuration files, ESP32 firmware, BLE UUIDs, device control commands, API keys, or any private database structure.
 
 The complete implementation is kept private because the project integrates with:
 
 - Firebase services
 - Bluetooth Low Energy device communication
+- ESP32 firmware
+- Smart inhaler actuation logic
+- Spirometry signal processing
 - Patient-related medical data
-- Smart device control logic
+- Smart device control workflows
 
-This public version is intended only to present the project idea, features, workflow, and user interface.
+This public version is intended only to present the project idea, device concept, application features, workflow, and user interface.
 
 ---
 
