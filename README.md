@@ -398,7 +398,7 @@ This public version is intended only to present the project idea, device concept
 
 ## Academic Information
 
-**Project Name:** Smart Management System for Obstructive Lung Disease  
+**Project Name:** LungCare: Smart Management System for Obstructive Lung Disease  
 **Application Name:** LungCare  
 **University:** Capital University  
 **Faculty:** Faculty of Engineering  
