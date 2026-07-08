@@ -90,7 +90,7 @@ The design supports:
 - Servo motor alignment
 - Overall mechanical integration
 
-![Product Design Concept](assets/device/03-product-design-concept.png)
+![Product Design Concept](assets/device/03-product-design-concept.jpg)
 
 ---
 
