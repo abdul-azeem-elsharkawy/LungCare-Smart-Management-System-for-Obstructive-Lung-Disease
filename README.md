@@ -370,38 +370,6 @@ flowchart LR
 
 ---
 
-## 📁 Recommended Public Repository Structure
-
-```text
-LungCare-Mobile-App/
-│
-├── README.md
-│
-├── assets/
-    ├── screenshots/
-    │   ├── 01-login.png
-    │   ├── 02-patient-dashboard.bmp
-    │   ├── 03-my-device.png
-    │   ├── 04-smart-inhaler.bmp
-    │   ├── 05-spirometry-instructions.png
-    │   ├── 06-spirometry-test.bmp
-    │   ├── 07-spirometry-report.png
-    │   ├── 08-doctor-dashboard.png
-    │   ├── 09-patient-details-doctor-view.png
-    │   └── 10-treatment-plan.bmp
-    │
-    └── device/
-        ├── 01-lungcare-device.png
-        ├── 02-product-architecture.png
-        ├── 03-product-design-concept.jpg
-        ├── 04-3d-printed-housing.png
-        ├── 05-spirometer-module.png
-        └── 06-smart-inhaler-module.png
-
-```
-
----
-
 ## 🔐 Security Note
 
 This public repository does not include the application source code, Firebase configuration files, ESP32 firmware, BLE UUIDs, device control commands, API keys, or any private database structure.
