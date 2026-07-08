@@ -1,82 +1,153 @@
-# LungCare 
+<div align="center">
 
-## A Smart Management System for Obstructive Lung Disease
+# 🫁 LungCare
 
-LungCare is a smart connected respiratory-care system designed to support patients with obstructive lung diseases. The system combines a custom smart device, a Flutter mobile application, Bluetooth Low Energy communication, and Firebase cloud services to provide medication support, guided spirometry testing, medical reporting, and remote doctor follow-up.
+### Smart Management System for Obstructive Lung Disease
 
+**Integrated Smart Inhaler · Smart Spirometer · Mobile Application · Cloud Monitoring**
 
-> This repository is a public showcase version of the project.  
-> The source code is kept private for security reasons because the system integrates with Firebase services, Bluetooth Low Energy communication, and medical-device-related workflows.
+<br>
 
----
+![Showcase](https://img.shields.io/badge/Repository-Public%20Showcase-00B8D9?style=for-the-badge)
+![Flutter](https://img.shields.io/badge/Flutter-Mobile%20Application-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-Cloud%20Services-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![BLE](https://img.shields.io/badge/BLE-Device%20Communication-0D47A1?style=for-the-badge)
+![ESP32](https://img.shields.io/badge/ESP32-Embedded%20System-111827?style=for-the-badge)
 
-## Project Overview
+<br>
 
-Patients with obstructive lung diseases often need continuous medication tracking, periodic pulmonary function monitoring, and regular follow-up with healthcare providers.
+> **Breathe Smarter, Live Better**
 
-LungCare was developed to make this process more connected and organized by combining:
-
-- A Flutter mobile application
-- ESP32 Bluetooth Low Energy communication
-- Smart inhaler dose tracking
-- Digital spirometry test guidance
-- Firebase cloud-based medical data storage
-- Doctor dashboard for patient follow-up
-
-The system aims to improve treatment adherence, support remote monitoring, and provide a clearer view of the patient’s respiratory condition over time.
+</div>
 
 ---
 
-## LungCare Smart Device
+## 📌 Repository Scope
 
-LungCare is not only a mobile application. It is designed as a complete connected respiratory-care system that combines a smart physical device with a mobile application and cloud-based medical follow-up.
+This repository is a **public showcase version** of the LungCare graduation project.
 
-The LungCare device integrates two main modules:
+The complete source code is kept private for security reasons because the full system integrates with Firebase services, Bluetooth Low Energy communication, ESP32 firmware, smart-device actuation logic, and patient-related medical workflows.
 
-- Smart Inhaler Module
-- Smart Spirometer Module
+This public repository presents:
 
-Together, these modules support medication delivery, lung-function testing, digital tracking, and doctor review through one connected platform.
+- Project idea and motivation
+- System architecture
+- Smart device concept
+- Mobile application features
+- Patient and doctor workflows
+- User interface screenshots
+- Academic project information
+
+---
+
+## 📖 Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Problem Statement](#-problem-statement)
+- [LungCare Solution](#-lungcare-solution)
+- [LungCare Smart Device](#-lungcare-smart-device)
+- [Product Architecture](#-product-architecture)
+- [Smart Inhaler Module](#-smart-inhaler-module)
+- [Smart Spirometer Module](#-smart-spirometer-module)
+- [Mobile Application](#-mobile-application)
+- [Application Workflows](#-application-workflows)
+- [Screenshots](#-screenshots)
+- [Technology Stack](#-technology-stack)
+- [Security Note](#-security-note)
+- [Academic Information](#-academic-information)
+- [Disclaimer](#-disclaimer)
+
+---
+
+## 🫁 Project Overview
+
+**LungCare** is a smart connected respiratory-care system designed to support patients with obstructive lung diseases.
+
+The system combines a custom smart respiratory device, a Flutter mobile application, Bluetooth Low Energy communication, and Firebase cloud services to provide medication support, guided spirometry testing, medical reporting, and remote doctor follow-up.
+
+LungCare is designed as a complete patient-doctor-device ecosystem that connects:
+
+- A smart inhaler module for safer medication delivery
+- A smart spirometer module for guided lung-function testing
+- A mobile application for patients and doctors
+- Firebase cloud services for medical data storage and monitoring
 
 ![LungCare Smart Device](assets/device/01-lungcare-device.png)
 
 ---
 
-## Device Concept
+## 🚩 Problem Statement
 
-The LungCare smart device was designed to transform respiratory care from manual and disconnected workflows into a smart, guided, and connected experience.
+Patients with obstructive lung diseases often require continuous care, correct medication use, and regular lung-function monitoring.
 
-The device supports:
+Traditional respiratory care is still separated into disconnected steps:
+
+- Manual inhaler use
+- Clinic-based spirometry
+- Manual medication tracking
+- Delayed doctor follow-up
+- Limited objective home-monitoring data
+
+This creates challenges for both patients and doctors.
+
+| Patient Challenges | Doctor Challenges |
+|---|---|
+| Incorrect inhaler technique | Limited objective follow-up data |
+| Poor hand-breath coordination | Unclear adherence history |
+| Difficulty confirming correct dose delivery | Delayed clinical intervention |
+| No simple home-based lung-function test | Difficulty monitoring progress remotely |
+| Poor medication tracking | Limited remote visibility |
+
+---
+
+## ✅ LungCare Solution
+
+LungCare transforms respiratory care from manual and disconnected into **smart, guided, and connected care**.
+
+The system supports:
 
 - Automated medication actuation
 - Guided spirometry testing
 - Digital medication tracking
 - Lung-function result visualization
-- Patient data sharing with doctors
-
-This allows the patient to use one integrated system for treatment, testing, and medical follow-up.
+- Remote doctor review
+- Patient notifications and reminders
+- Secure device ownership and pairing
 
 ---
 
-## Product Architecture
+## 🔧 LungCare Smart Device
+
+LungCare is not only a mobile application. It is designed as a complete smart respiratory-care device connected to a mobile platform.
+
+The device integrates two main modules:
+
+- **Smart Inhaler Module**
+- **Smart Spirometer Module**
+
+Together, these modules support medication delivery, lung-function testing, digital tracking, and doctor review through one connected system.
+
+---
+
+## 🏗️ Product Architecture
 
 The system architecture connects embedded hardware, Bluetooth Low Energy communication, the Flutter mobile application, Firebase services, and clinical follow-up tools.
 
-The hardware layer includes the smart inhaler and smart spirometer device. The mobile app acts as the user interface, while Firebase stores patient data, medication logs, spirometry reports, and treatment updates.
-
 ![Product Architecture](assets/device/02-product-architecture.png)
 
-The main architecture layers include:
+### Main Architecture Layers
 
-- Embedded hardware
-- Bluetooth Low Energy communication
-- Flutter mobile application
-- Firebase cloud services
-- Clinical management layer
+| Layer | Description |
+|---|---|
+| Embedded Hardware | ESP32, sensors, servo actuator, indicators, and battery system |
+| BLE Communication | Real-time bidirectional communication between the device and the mobile app |
+| Flutter Mobile App | Patient dashboard, doctor dashboard, reports, alerts, and device management |
+| Firebase Services | Authentication, Firestore records, Realtime Database device state |
+| Clinical Management | Doctor review, patient monitoring, and treatment plan updates |
 
 ---
 
-## Product Design Concept
+## 🧩 Product Design Concept
 
 The LungCare device housing was custom-engineered to integrate the mechanical and electronic components required for portable respiratory care.
 
@@ -94,7 +165,7 @@ The design supports:
 
 ---
 
-## 3D-Printed Housing
+## 🖨️ 3D-Printed Housing
 
 The physical prototype was built using a custom 3D-printed housing.
 
@@ -110,11 +181,30 @@ The housing was designed to support:
 
 ---
 
-## Smart Spirometer Module
+## 💊 Smart Inhaler Module
+
+The Smart Inhaler module replaces manual inhaler pressing with a controlled and sensor-validated medication delivery mechanism.
+
+### Key Capabilities
+
+- Safety validation before actuation
+- Correct orientation checking
+- Inhalation-based triggering
+- Servo-based canister pressing
+- Confirmed dose logging to the mobile application
+- Digital medication history for doctor review
+
+The goal of this module is to improve dose delivery reliability, reduce incorrect inhaler technique, and support better treatment adherence.
+
+![Smart Inhaler Module](assets/device/06-smart-inhaler-module.png)
+
+---
+
+## 📈 Smart Spirometer Module
 
 The LungCare Smart Spirometer brings lung-function assessment closer to the patient’s home.
 
-The spirometer module supports:
+### Key Capabilities
 
 - Home-based assessment
 - Guided test workflow
@@ -122,33 +212,37 @@ The spirometer module supports:
 - Spirometry report generation
 - Doctor review through the mobile application
 
+The spirometer relies on pressure-based airflow sensing to estimate airflow and calculate respiratory values such as:
+
+- FVC
+- FEV1
+- FEV1/FVC ratio
+- PEF
+- FET
+
 ![Smart Spirometer Module](assets/device/05-spirometer-module.png)
 
-The spirometer relies on pressure-based airflow sensing to estimate airflow and calculate respiratory values such as FVC, FEV1, FEV1/FVC ratio, PEF, and FET.
+---
+
+## 📱 Mobile Application
+
+The LungCare mobile application connects the patient, doctor, smart device, and cloud services in one digital platform.
+
+### Main App Modules
+
+| Module | Purpose |
+|---|---|
+| Patient Dashboard | Gives the patient access to inhaler, spirometry, device status, and instructions |
+| Doctor Dashboard | Allows doctors to monitor linked patients and review medical data |
+| Smart Inhaler Card | Starts and tracks the medication dose workflow |
+| Spirometry Card | Starts guided pulmonary function testing |
+| My Device Page | Displays device status, battery level, connection state, and unpair option |
+| Reports | Displays spirometry values, curves, and test quality notes |
+| Notifications | Alerts the patient about treatment updates, low dose count, and low battery |
 
 ---
 
-## Smart Inhaler Module
-
-The Smart Inhaler module replaces manual inhaler pressing with a controlled and sensor-validated medication delivery mechanism.
-
-The module supports:
-
-- Safety validation before actuation
-- Correct orientation checking
-- Inhalation-based triggering
-- Servo-based canister pressing
-- Confirmed dose logging to the mobile application
-
-![Smart Inhaler Module](assets/device/06-smart-inhaler-module.png)
-
-The goal of this module is to improve dose delivery reliability, reduce incorrect inhaler technique, and provide a clear digital medication history for both patients and doctors.
-
----
-
-## Main Application Users
-
-### Patient
+## 👤 Patient Experience
 
 The patient can:
 
@@ -160,7 +254,9 @@ The patient can:
 - Receive low-dose and low-battery notifications
 - Monitor device status through the My Device page
 
-### Doctor
+---
+
+## 🩺 Doctor Experience
 
 The doctor can:
 
@@ -173,117 +269,75 @@ The doctor can:
 
 ---
 
-## Key Features
-
-### Smart Inhaler Workflow
-
-The smart inhaler module allows the patient to start the dose process from the mobile application.
-
-The app communicates with the ESP32 device through Bluetooth Low Energy. The dose is only logged after the app receives a confirmed dose signal from the device.
-
-This helps avoid false dose logging and improves medication tracking accuracy.
-
----
-
-### Guided Spirometry Test
-
-The application provides a guided spirometry workflow to help the patient perform the test correctly.
-
-The spirometry instructions screen includes:
-
-- Written test steps
-- Patient-friendly breathing guidance
-- An instructional video guide inside the app
-- Start test button leading to the interactive spirometry test screen
-
-The test includes normal breathing followed by forced exhalation trials.
-
----
-
-### Spirometry Reports
-
-The application stores and displays important pulmonary function parameters, including:
-
-- FVC
-- FEV1
-- FEV1/FVC Ratio
-- PEF
-- FET
-- Test quality notes
-- Flow-volume curve
-- Flow-time curve
-
-These reports help doctors evaluate the patient’s respiratory condition and follow disease progression.
-
----
-
-### My Device Page
-
-The My Device page allows the patient to monitor and manage the paired LungCare device.
-
-It displays:
-
-- Device name
-- Device ID
-- Connection status
-- Last seen time
-- Battery percentage
-- Unpair device option
-
-The page also supports secure device ownership, ensuring that one physical device can only be paired with one patient at a time.
-
----
-
-### Notifications and Alerts
-
-The application supports several patient notifications:
-
-- Treatment plan update notification
-- Inhaler low-dose notification
-- Low battery notification
-- Device-related reminders
-
-These alerts help patients stay consistent with treatment and device usage.
-
----
-
-### Doctor Dashboard
-
-The doctor dashboard allows healthcare providers to follow patients remotely.
-
-Doctors can review medication usage, spirometry reports, and update the patient treatment plan.
-
-When the doctor updates the plan, the patient receives a notification inside the application.
-
----
-
-## Application Workflow
+## 🔄 Application Workflows
 
 ### Patient Workflow
 
-1. Patient logs into the application.
-2. Patient pairs the LungCare device.
-3. Patient views device status from the My Device page.
-4. Patient takes medication using the Smart Inhaler card.
-5. Patient performs a guided spirometry test.
-6. Spirometry results are saved and displayed as reports.
-7. Patient receives notifications for treatment updates, low dose count, and low battery.
-
----
+```mermaid
+flowchart LR
+    A[Login] --> B[Pair LungCare Device]
+    B --> C[View Patient Dashboard]
+    C --> D[Use Smart Inhaler]
+    C --> E[Perform Spirometry Test]
+    D --> F[Medication Log]
+    E --> G[Spirometry Report]
+    F --> H[Doctor Review]
+    G --> H
+```
 
 ### Doctor Workflow
 
-1. Doctor logs into the application.
-2. Doctor views linked patients.
-3. Doctor opens a patient profile.
-4. Doctor reviews medication logs.
-5. Doctor reviews spirometry reports.
-6. Doctor updates the treatment plan.
-7. Patient receives the updated medical instructions.
+```mermaid
+flowchart LR
+    A[Doctor Login] --> B[View Linked Patients]
+    B --> C[Open Patient Profile]
+    C --> D[Review Medication Logs]
+    C --> E[Review Spirometry Reports]
+    D --> F[Update Treatment Plan]
+    E --> F
+    F --> G[Patient Receives Notification]
+```
 
 ---
 
-## Technology Stack
+## 🖼️ Screenshots
+
+### Mobile Application Screens
+
+<table>
+  <tr>
+    <td align="center"><img src="assets/screenshots/01-login.png" width="220"><br><b>Login Screen</b></td>
+    <td align="center"><img src="assets/screenshots/02-patient-dashboard.bmp" width="220"><br><b>Patient Dashboard</b></td>
+    <td align="center"><img src="assets/screenshots/03-my-device.png" width="220"><br><b>My Device Page</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/screenshots/04-smart-inhaler.bmp" width="220"><br><b>Smart Inhaler</b></td>
+    <td align="center"><img src="assets/screenshots/05-spirometry-instructions.png" width="220"><br><b>Spirometry Instructions</b></td>
+    <td align="center"><img src="assets/screenshots/06-spirometry-test.bmp" width="220"><br><b>Gamified Spirometry Test</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/screenshots/07-spirometry-report.png" width="220"><br><b>Spirometry Report</b></td>
+    <td align="center"><img src="assets/screenshots/08-doctor-dashboard.png" width="220"><br><b>Doctor Dashboard</b></td>
+    <td align="center"><img src="assets/screenshots/10-treatment-plan.bmp" width="220"><br><b>Treatment Plan Update</b></td>
+  </tr>
+</table>
+
+### Smart Device and System Design
+
+<table>
+  <tr>
+    <td align="center"><img src="assets/device/01-lungcare-device.png" width="330"><br><b>LungCare Smart Device</b></td>
+    <td align="center"><img src="assets/device/02-product-architecture.png" width="330"><br><b>Product Architecture</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/device/03-product-design-concept.jpg" width="330"><br><b>Product Design Concept</b></td>
+    <td align="center"><img src="assets/device/04-3d-printed-housing.png" width="330"><br><b>3D-Printed Housing</b></td>
+  </tr>
+</table>
+
+---
+
+## 🛠️ Technology Stack
 
 ### Mobile Application
 
@@ -316,69 +370,39 @@ When the doctor updates the plan, the patient receives a notification inside the
 
 ---
 
-## Screenshots
+## 📁 Recommended Public Repository Structure
 
-### Login Screen
+```text
+LungCare-Mobile-App/
+│
+├── README.md
+│
+├── assets/
+    ├── screenshots/
+    │   ├── 01-login.png
+    │   ├── 02-patient-dashboard.bmp
+    │   ├── 03-my-device.png
+    │   ├── 04-smart-inhaler.bmp
+    │   ├── 05-spirometry-instructions.png
+    │   ├── 06-spirometry-test.bmp
+    │   ├── 07-spirometry-report.png
+    │   ├── 08-doctor-dashboard.png
+    │   ├── 09-patient-details-doctor-view.png
+    │   └── 10-treatment-plan.bmp
+    │
+    └── device/
+        ├── 01-lungcare-device.png
+        ├── 02-product-architecture.png
+        ├── 03-product-design-concept.jpg
+        ├── 04-3d-printed-housing.png
+        ├── 05-spirometer-module.png
+        └── 06-smart-inhaler-module.png
 
-![Login Screen](assets/screenshots/01-login.png)
-
----
-
-### Patient Dashboard
-
-![Patient Dashboard](assets/screenshots/02-patient-dashboard.bmp)
-
----
-
-### My Device Page
-
-![My Device Page](assets/screenshots/03-my-device.png)
-
----
-
-### Smart Inhaler Card
-
-![Smart Inhaler](assets/screenshots/04-smart-inhaler.bmp)
-
----
-
-### Spirometry Instructions with Video Guide
-
-![Spirometry Instructions](assets/screenshots/05-spirometry-instructions.png)
-
----
-
-### Gamified Spirometry Test
-
-![Spirometry Test](assets/screenshots/06-spirometry-test.bmp)
+```
 
 ---
 
-### Spirometry Report
-
-![Spirometry Report](assets/screenshots/07-spirometry-report.png)
-
----
-
-### Doctor Dashboard
-
-![Doctor Dashboard](assets/screenshots/08-doctor-dashboard.png)
-
----
-
-### Doctor Patient View
-
-![Doctor Patient View](assets/screenshots/09-patient-details-doctor-view.png)
-
----
-
-### Treatment Plan Update
-
-![Treatment Plan](assets/screenshots/10-treatment-plan.bmp)
-
----
-
-## Security Note
+## 🔐 Security Note
 
 This public repository does not include the application source code, Firebase configuration files, ESP32 firmware, BLE UUIDs, device control commands, API keys, or any private database structure.
 
@@ -396,18 +420,20 @@ This public version is intended only to present the project idea, device concept
 
 ---
 
-## Academic Information
+## 🎓 Academic Information
 
-**Project Name:** LungCare: Smart Management System for Obstructive Lung Disease  
-**Application Name:** LungCare  
-**University:** Capital University  
-**Faculty:** Faculty of Engineering  
-**Department:** Biomedical Engineering Department  
-**Graduation Year:** 2026  
+| Field | Details |
+|---|---|
+| Project Name | LungCare: Smart Management System for Obstructive Lung Disease |
+| Application Name | LungCare |
+| University | Capital University |
+| Faculty | Faculty of Engineering |
+| Department | Biomedical Engineering Department |
+| Graduation Year | 2026 |
 
 ---
 
-## Team Members
+## 👥 Team Members
 
 - AbdulAzeem Lotfy AbdulAzeem
 - Amr Mohamed Sayed
@@ -418,19 +444,21 @@ This public version is intended only to present the project idea, device concept
 
 ---
 
-## Supervisors
+## 👨‍🏫 Supervisors
 
 - Dr. Mohamed Ali
 - Dr. Yomna Hassan
 
 ---
 
-## Project Status
+## 🚧 Project Status
 
 The project is currently developed as a graduation project prototype combining mobile application development, embedded systems, Bluetooth communication, Firebase cloud services, and respiratory healthcare monitoring.
 
 ---
 
-## Disclaimer
+## ⚠️ Disclaimer
 
-LungCare is developed for academic and research purposes as a graduation project prototype. It is not intended to replace professional medical diagnosis, clinical spirometry devices, or direct medical supervision.
+LungCare is developed for academic and research purposes as a graduation project prototype.
+
+It is not intended to replace professional medical diagnosis, clinical spirometry devices, or direct medical supervision.
